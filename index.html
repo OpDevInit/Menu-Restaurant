@@ -1,40 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="styles/quantity.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    
 </head>
+
 <body>
     <div class="container">
-        <H1>Menu - Faça A Sua Escolha</H1>
-        <div class="template-1">
+        <object data="assets/home.jpg"></object>
+        <div class="menu-title">
+            Menu - Faça A Sua Escolha
+        </div>
+        <div class="template">
             <div class="template-title">
                 Prato Principal
             </div>
             <div class="subtitle-template">
                 Todos os pratos acompanham arroz, feijão e a sobremesa do dia.
             </div>
-            
+            <div class="menu-img">
+                <div class="img-container">
+                    <div>
+                        <object data="assets/bife.jpg" class="img"></object>
+                    </div>
+                    <div class="food-description">Bife com batata</div>
+                    <div class="price">R$30,00</div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+
+                </div>
+                <div class="img-container">
+                    <div>
+                        <object data="assets/coxa.jpg" class="img"></object>
+                    </div>
+                    <div class="food-description">Coxa de Frango Crocante</div>
+                    <div class="price">R$25,00</div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="img-container">
+                    <div>
+                        <object data="assets/panela.jpg" class="img"></object>
+                    </div>
+                    <div class="food-description">Carne de Panela</div>
+                    <div class="price">R$22,00</div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="template-2">
+        <div class="template">
             <div class="template-title">
                 Acompanhamentos
             </div>
             <div class="subtitle-template">
                 Porções para uma pessoa
             </div>
-        </div>
-        <div class="template-3">
-            <div class="template-title">
-               Dados Pessoais
+            <div class="menu-img">
+                <div class="img-container">
+                    <div>
+                        <object data="assets/farofa.jpg" class="img"></object>
+                    </div>
+                    <div class="food-description">Farofa</div>
+                    <div class="price">R$10,00</div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="img-container">
+                    <div>
+                        <object data="assets/salad.jpg" class="img"></object>
+                    </div>
+                    <div class="food-description">salada</div>
+                    <div class="price">R$8,00</div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="img-container">
+                    <div>
+                        <object data="assets/torresmo.jpg" class="img"></object>
+                    </div>
+                    <div class="food-description">Torresmo</div>
+                    <div class="price">R$12,00</div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
             </div>
-            <input type="text">
-            <input type="number">
-            <input type="text">
-            <button></button>
         </div>
+        <div class="template template-form">
+            <div class="template-title">
+                Dados Pessoais
+            </div>
+            <input type="text" class="form-input" placeholder="Digite seu nome:">
+            <input type="tel" class="form-input" placeholder="Digite seu Número:">
+            <input type="email" class="form-input" placeholder="Digite seu Email:">
+        </div>
+        <button class="calc-button">Calcular</button>
     </div>
-    
+
+    <script src="js/javascript.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/quantity.js"></script>
+
+
 </body>
+
 </html>

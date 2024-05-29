@@ -120,7 +120,7 @@
                 Dados Pessoais
             </div>
             <input type="text" class="form-input" placeholder="Digite seu nome:">
-            <input type="tel" class="form-input" placeholder="Digite seu Número:">
+            <input type="tel" id="phone" class="form-input" placeholder="Digite seu Número:">
             <input type="email" class="form-input" placeholder="Digite seu Email:">
         </div>
         <button class="calc-button">Calcular</button>
@@ -128,6 +128,8 @@
 
     <script src="js/javascript.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"> </script>
+    <script> $("#phone").mask("(99) 9999-99999"); </script>
     <script src="js/quantity.js"></script>
 
 
